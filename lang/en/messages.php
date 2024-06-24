@@ -186,6 +186,9 @@ return [
         'sign_in' => 'Sign In',
         'new_here' => 'New Here',
         'create_an_account' => 'Create an Account',
+        'create_an_account_aspatient' => 'Create an account as a patient',
+        'create_an_account_asdoctor' => 'Create an account as a doctor',
+
         'remember_me' => 'Remember me',
         'forgot_password' => 'Forgot Password',
         'already_have_patient_account' => 'Already Have Patient Account',

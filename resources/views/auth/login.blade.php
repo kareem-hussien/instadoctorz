@@ -45,10 +45,16 @@
                     <button type="submit" class="btn btn-primary">{{ __('messages.login') }}</button>
                 </div>
 
-                <div class="d-flex align-items-center mb-10 mt-4">
+                <div class="d-flex align-items-center mb-2 mt-4">
                     <span class="text-gray-700 me-2">{{__('messages.web.new_here').'?'}}</span>
                     <a href="{{ route('register') }}" class="link-info fs-6 text-decoration-none">
-                        {{__('messages.web.create_an_account')}}
+                        {{__('messages.web.create_an_account_aspatient')}}
+                    </a>
+                </div>
+                <div class="d-flex align-items-center mb-10 ">
+                    <span class="text-gray-700 me-2">{{__('messages.web.new_here').'?'}}</span>
+                    <a href="{{ route('register.doctor') }}" class="link-info fs-6 text-decoration-none">
+                        {{__('messages.web.create_an_account_asdoctor')}}
                     </a>
                 </div>
             </form>

@@ -175,6 +175,8 @@ return [
         'sign_in' => 'تسجيل الدخول',
         'new_here' => 'جديد هنا',
         'create_an_account' => 'إنشاء حساب',
+        'create_an_account_aspatient' =>'إنشاء حساب كمريض',
+        'create_an_account_asdoctor' => 'إنشاء حساب كطبيب',
         'remember_me' => 'تذكرني',
         'forgot_password' => 'نسيت كلمة المرور',
         'already_have_patient_account' => 'لديك حساب مريض بالفعل',

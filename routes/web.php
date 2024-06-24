@@ -79,6 +79,8 @@ Route::get('/login', function () {
     return (! Auth::check()) ? view('auth.login') : Redirect::to(getDashboardURL());
 })->name('login');
 
+
+
 Route::middleware('setLanguage')->group(function () {
     Route::get('/', [FrontController::class, 'medical'])->name('medical');
     Route::get('/medical-about-us', [FrontController::class, 'medicalAboutUs'])->name('medicalAboutUs');
@@ -148,6 +150,7 @@ Route::post('/paytm-callback', [PayTMController::class, 'paymentCallback'])->nam
 Route::get('paytm-payment-cancel', [PayTMController::class, 'failed'])->name('paytm.failed');
 
 Route::post('/register', [RegisteredUserController::class, 'store'])->name('register');
+// Route::post('/register/doctor', [RegisteredUserController::class, 'store'])->name('register.doctor');
 
 Route::post('/enquiries', [EnquiryController::class, 'store'])->name('enquiries.store');
 Route::post('/subscribe', [SubscribeController::class, 'store'])->name('subscribe.store');
