@@ -17,9 +17,9 @@ Route::get('/register', [RegisteredUserController::class, 'create'])
 Route::post('/register', [RegisteredUserController::class, 'store'])
     ->middleware('guest')->middleware('setLanguage');
 
-Route::get('/register/doctor', [RegisteredUserController::class, 'create'])
-    ->middleware('guest')
-    ->name('register.doctor')->middleware('setLanguage');
+Route::get('/register/doctor', [RegisteredUserController::class, 'doctorcreate'])
+    ->middleware(['guest', 'setLanguage'])
+    ->name('register.doctor');
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])
     ->middleware('guest')
