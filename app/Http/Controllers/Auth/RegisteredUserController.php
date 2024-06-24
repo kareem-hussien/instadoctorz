@@ -23,6 +23,12 @@ class RegisteredUserController extends Controller
         return view('auth.register',compact('captchakey'));
     }
 
+    public function doctorcreate(): View
+    {
+        $captchakey = Setting::where('key','googleCaptchaKey')->pluck('value')->first();
+        return view('auth.doctoreregister',compact('captchakey'));
+    }
+
     /**
      * Handle an incoming registration request.
      */
