@@ -15,6 +15,21 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->double('experience')->nullable();
+            // 
+            $table->string('prefix')->nullable();
+            $table->string('education')->nullable();
+            $table->string('availability')->nullable();
+            $table->boolean('can_start_immediately')->default(0);
+            $table->string('start_date')->nullable();
+            $table->string('services_can_be_performed_online')->nullable();
+            $table->string('urgent_care')->nullable();
+            $table->string('chronic_care')->nullable();
+            $table->string('child_care')->nullable();
+            $table->string('sexual_health')->nullable();
+            $table->string('skin_and_hair')->nullable();
+            $table->string('mental_health')->nullable();
+            $table->string('preventive_health')->nullable();
+            
             $table->timestamps();
 
             $table->foreign('user_id')->on('users')->references('id')->onDelete('cascade')

@@ -78,8 +78,18 @@ class UserController extends AppBaseController
         $specializations = Specialization::pluck('name', 'id')->toArray();
         $country = $this->userRepo->getCountries();
         $bloodGroup = Doctor::BLOOD_GROUP_ARRAY;
+        $prefixdata=[
+            'Mr' => 'Mr','Mrs' => 'Mrs','Ms' => 'Ms','Mx' => 'Mx','Miss' => 'Miss','Dr' => 'Dr','Prof' => 'Prof'
+        ];
+        $educationdata=[
+                    'Bachelor' => 'Bachelor',
+                    'Diploma' => 'Diploma',
+                    "Master's degree" => "Master's degree",
+                    'PHD' => 'PHD',
+                    'Other' => 'Other',
+                    ];
 
-        return view('doctors.create', compact('specializations', 'country', 'bloodGroup'));
+        return view('doctors.create', compact('specializations', 'country', 'bloodGroup','prefixdata','educationdata'));
     }
 
     /**
