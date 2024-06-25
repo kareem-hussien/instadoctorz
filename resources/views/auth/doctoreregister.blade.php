@@ -15,7 +15,7 @@
         </div>
         <div class="bg-white rounded-15 shadow-md width-540 px-5 px-sm-7 py-10 mx-auto">
             <h1 class="text-center mb-7">{{__('messages.web.patient_registration')}}</h1>
-            <form method="POST" action="{{ route('register') }}" >
+            <form method="POST" action="{{ route('doctor.register') }}" >
                 @csrf
                 <div class="row">
                     <div class="col-md-6 mb-sm-7 mb-4">

@@ -150,6 +150,7 @@ Route::post('/paytm-callback', [PayTMController::class, 'paymentCallback'])->nam
 Route::get('paytm-payment-cancel', [PayTMController::class, 'failed'])->name('paytm.failed');
 
 Route::post('/register', [RegisteredUserController::class, 'store'])->name('register');
+Route::post('/register/doctor', [RegisteredUserController::class, 'storeDoctor'])->name('doctor.register');
 // Route::post('/register/doctor', [RegisteredUserController::class, 'store'])->name('register.doctor');
 
 Route::post('/enquiries', [EnquiryController::class, 'store'])->name('enquiries.store');

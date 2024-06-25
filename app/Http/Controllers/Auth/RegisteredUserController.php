@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
@@ -78,13 +79,77 @@ class RegisteredUserController extends Controller
             'language' => getSettingValue('language'),
         ]);
 
-        $user->patient()->create([
-            'patient_unique_id' => mb_strtoupper(Patient::generatePatientUniqueId()),
-        ]);
+        // $user->patient()->create([
+        //     'patient_unique_id' => mb_strtoupper(Patient::generatePatientUniqueId()),
+        // ]);
 
-        $user->assignRole('patient');
+        $user->assignRole('doctor');
 
         $user->sendEmailVerificationNotification();
+
+        Flash::success(__('messages.flash.your_reg_success'));
+
+        return redirect('login');
+    }
+
+
+    public function storeDoctor(Request $request): RedirectResponse
+    {
+        $request->validate([
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix|unique:users,email',
+            'password' => ['required', 'confirmed', 'min:6'],
+            'toc' => 'required',
+        ]);
+
+        $datas1 = Setting::where('key','recaptcha')->first();
+        if($datas1->value){
+            $request->validate([
+                'g-recaptcha-response' => 'required',
+            ],
+            [
+                'g-recaptcha-response.required' => __('messages.common.google_captcha_required'),
+            ]);
+        }
+
+        $user = User::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'type' => User::DOCTOR,
+            'language' => getSettingValue('language'),
+        ]);
+        $doctor=Doctor::create([
+            'availability'=>json_encode($request->availability),
+            'services'=>json_encode($request->services),
+            'sub_urgent_care'=>json_encode($request->sub_urgent_care),
+            'sub_preventive_health'=>json_encode($request->sub_preventive_health),
+            'can_start'=>$request->can_start,
+            'child_care'=>$request->child_care,
+            'chronic_care'=>$request->chronic_care,
+            'education'=>$request->education,
+            'experience'=>$request->experience,
+            'instagram_url'=>$request->instagram_url,
+            'linkedin_url'=>$request->linkedin_url,
+            'mental_health'=>$request->mental_health,
+            'prefix'=>$request->prefix,
+            'preventive_health'=>$request->preventive_health,
+            'services_can_be_performed_online'=>$request->services_can_be_performed_online,
+            'sexual_health'=>$request->sexual_health,
+            'skin_and_hair'=>$request->skin_and_hair,
+            'start_date'=>$request->start_date,
+            'twitter_url'=>$request->twitter_url,
+            'urgent_care'=>$request->urgent_care,
+            'user_id'=>$user->id,
+        ]);
+
+        $doctor->specializations()->attach($request->specializations);
+
+        $user->assignRole('doctor');
+
+        // $user->sendEmailVerificationNotification();
 
         Flash::success(__('messages.flash.your_reg_success'));
 

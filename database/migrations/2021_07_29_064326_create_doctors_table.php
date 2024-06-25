@@ -15,11 +15,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->double('experience')->nullable();
-            // 
             $table->string('prefix')->nullable();
             $table->string('education')->nullable();
             $table->string('availability')->nullable();
-            $table->boolean('can_start_immediately')->default(0);
+            $table->boolean('can_start')->default(0)->nullable();
             $table->string('start_date')->nullable();
             $table->string('services_can_be_performed_online')->nullable();
             $table->string('urgent_care')->nullable();
@@ -29,6 +28,9 @@ return new class extends Migration
             $table->string('skin_and_hair')->nullable();
             $table->string('mental_health')->nullable();
             $table->string('preventive_health')->nullable();
+            $table->string('sub_urgent_care')->nullable();
+            $table->string('sub_preventive_health')->nullable();
+            $table->string('services')->nullable();
             
             $table->timestamps();
 

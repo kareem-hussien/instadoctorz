@@ -54,12 +54,28 @@ class Doctor extends Model
      * @var string[]
      */
     protected $fillable = [
-        'user_id',
-        'specialization',
+        'availability',
+        'services',
+        'sub_urgent_care',
+        'sub_preventive_health',
+        'can_start',
+        'immediately',
+        'child_care',
+        'chronic_care',
+        'education',
         'experience',
-        'twitter_url',
-        'linkedin_url',
         'instagram_url',
+        'linkedin_url',
+        'mental_health',
+        'prefix',
+        'preventive_health',
+        'services_can_be_performed_online',
+        'sexual_health',
+        'skin_and_hair',
+        'start_date',
+        'twitter_url',
+        'urgent_care',
+        'user_id',
     ];
 
     protected $casts = [
