@@ -202,8 +202,20 @@ class UserController extends AppBaseController
         $user = Auth::user();
         $patient =  Patient::where('user_id',$user->id)->first();
         $data = $this->userRepo->getData();
+        $prefixdata=[
+            'Mr' => 'Mr','Mrs' => 'Mrs','Ms' => 'Ms','Mx' => 'Mx','Miss' => 'Miss','Dr' => 'Dr','Prof' => 'Prof'
+        ];
+        $educationdata=[
+                    'Bachelor' => 'Bachelor',
+                    'Diploma' => 'Diploma',
+                    "Master's degree" => "Master's degree",
+                    'PHD' => 'PHD',
+                    'Other' => 'Other',
+                    ];
+        $bloodGroup = Doctor::BLOOD_GROUP_ARRAY;
 
-        return view('profile.index', compact('user','data','patient'));
+
+        return view('profile.index', compact('user','data','patient','prefixdata','educationdata','bloodGroup'));
     }
 
     public function updateProfile(UpdateUserProfileRequest $request): RedirectResponse
