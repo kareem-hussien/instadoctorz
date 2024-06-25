@@ -218,6 +218,8 @@
 
 
 					<div class="row mt-5" id="urgentCareSubservices" style="display: none;">
+						<label class="form-label">{{ __('messages.patient.urgent_care').':' }}</label>
+
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Allergies" id="allergies">
@@ -270,96 +272,57 @@
 					</div>
 
 					<div class="row mt-5" id="ChronicCareSubservices" style="display: none;">
+						<label class="form-label">{{ __('messages.patient.chronic_care').':' }}</label>
+
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Allergies" id="allergies">
-								<label class="form-check-label" for="allergies">
-									{{ __('messages.patient.allergies') }}
+								<input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="asthma" id="asthma">
+								<label class="form-check-label" for="asthma">
+									{{ __('messages.patient.asthma') }}
 								</label>
 							</div>
 						</div>
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Acne" id="acne">
-								<label class="form-check-label" for="acne">
-									{{ __('messages.patient.acne') }}
+								<input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="high_cholesterol" id="high_cholesterol">
+								<label class="form-check-label" for="high_cholesterol">
+									{{ __('messages.patient.high_cholesterol') }}
 								</label>
 							</div>
 						</div>
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Cold, Cough" id="cold_cough">
-								<label class="form-check-label" for="cold_cough">
-									{{ __('messages.patient.cold,cough') }}
+								<input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="high_blood_pressure" id="high_blood_pressure">
+								<label class="form-check-label" for="high_blood_pressure">
+									{{ __('messages.patient.high_blood_pressure') }}
 								</label>
 							</div>
 						</div>
 
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="hair_loss" id="hair_loss">
-								<label class="form-check-label" for="hair_loss">
-									{{ __('messages.patient.hair_loss') }}
-								</label>
-							</div>
-						</div>
-						<div class="col-md-6 mb-5">
-							<div class="form-check">erectile_dysfunction
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="erectile_dysfunction" id="erectile_dysfunction">
-								<label class="form-check-label" for="erectile_dysfunction">
-									{{ __('messages.patient.erectile_dysfunction') }}
+								<input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="weight_management" id="weight_management">
+								<label class="form-check-label" for="weight_management">
+									{{ __('messages.patient.weight_management') }}
 								</label>
 							</div>
 						</div>
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="yeast_infections" id="yeast_infections">
-								<label class="form-check-label" for="yeast_infections">
-									{{ __('messages.patient.yeast_infections') }}
+								<input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="diabetes" id="diabetes">
+								<label class="form-check-label" for="diabetes">
+									{{ __('messages.patient.diabetes') }}
 								</label>
 							</div>
 						</div>
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="anxiety" id="anxiety">
-								<label class="form-check-label" for="anxiety">
-									{{ __('messages.patient.anxiety') }}
+								<input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="thyroid_issues" id="thyroid_issues">
+								<label class="form-check-label" for="thyroid_issues">
+									{{ __('messages.patient.thyroid_issues') }}
 								</label>
 							</div>
 						</div>
-						<div class="col-md-6 mb-5">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="gout" id="gout">
-								<label class="form-check-label" for="gout">
-									{{ __('messages.patient.gout') }}
-								</label>
-							</div>
-						</div>
-						<div class="col-md-6 mb-5">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="depression" id="depression">
-								<label class="form-check-label" for="depression">
-									{{ __('messages.patient.depression') }}
-								</label>
-							</div>
-						</div>
-						<div class="col-md-6 mb-5">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="urinary_tract_infection" id="urinary_tract_infection">
-								<label class="form-check-label" for="urinary_tract_infection">
-									{{ __('messages.patient.urinary_tract_infection') }}
-								</label>
-							</div>
-						</div>
-						<div class="col-md-6 mb-5">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="irritable_bowel_syndrome" id="irritable_bowel_syndrome">
-								<label class="form-check-label" for="irritable_bowel_syndrome">
-									{{ __('messages.patient.irritable_bowel_syndrome') }}
-								</label>
-							</div>
-						</div>
-						<!-- Add more sub-services as needed -->
 					</div>
 
 					<div class="row mt-5" id="ChildCareSubservices" style="display: none;">
@@ -369,6 +332,7 @@
 					</div>
 
 					<div class="row mt-5" id="SexualHealthSubservices" style="display: none;">
+						<label class="form-label">{{ __('messages.patient.sexual_health').':' }}</label>
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="sub_sexual_health[]" value="uti" id="uti">
@@ -414,6 +378,8 @@
 					</div>
 
 					<div class="row mt-5" id="SkinAndHairSubservices" style="display: none;">
+						<label class="form-label">{{ __('messages.patient.skin_and_hair').':' }}</label>
+
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="sub_skin_and_hair[]" value="hair_loss" id="hair_loss">
@@ -459,6 +425,8 @@
 					</div>
 
 					<div class="row mt-5" id="MentalHealthSubservices" style="display: none;">
+						<label class="form-label">{{ __('messages.patient.mental_health').':' }}</label>
+
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="anxiety" id="anxiety">
@@ -522,6 +490,8 @@
 					</div>
 
 					<div class="row mt-5" id="PreventiveHealthSubservices" style="display: none;">
+						<label class="form-label">{{ __('messages.patient.preventive_health').':' }}</label>
+
 						<div class="col-md-6 mb-5">
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="wellness_visits" id="wellness_visits">
