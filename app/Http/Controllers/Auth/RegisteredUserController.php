@@ -145,7 +145,7 @@ class RegisteredUserController extends Controller
             'user_id'=>$user->id,
         ]);
 
-        $doctor->specializations()->attach($request->specializations);
+        $doctor->specializations()->sync($request->specializations);
 
         $user->assignRole('doctor');
 

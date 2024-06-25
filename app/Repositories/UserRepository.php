@@ -84,12 +84,36 @@ class UserRepository extends BaseRepository
             $doctor = User::create($input);
             $doctor->assignRole('doctor');
             $doctor->address()->create($addressInputArray);
-            $createDoctor = $doctor->doctor()->create($doctorArray);
+       
+            $createDoctor = Doctor::create([
+                [
+                'availability'=>json_encode($input['availability']),
+                'services'=>json_encode($input['services']),
+                'sub_urgent_care'=>json_encode($input['sub_urgent_care']),
+                'sub_preventive_health'=>json_encode($input['sub_preventive_health']),
+                'can_start'=>$input['can_start'],
+                'child_care'=>$input['child_care'],
+                'chronic_care'=>$input['chronic_care'],
+                'education'=>$input['education'],
+                'experience'=>$input['experience'],
+                'instagram_url'=>$input['instagram_url'],
+                'linkedin_url'=>$input['linkedin_url'],
+                'mental_health'=>$input['mental_health'],
+                'prefix'=>$input['prefix'],
+                'preventive_health'=>$input['preventive_health'],
+                'services_can_be_performed_online'=>$input['services_can_be_performed_online'],
+                'sexual_health'=>$input['sexual_health'],
+                'skin_and_hair'=>$input['skin_and_hair'],
+                'start_date'=>$input['start_date'],
+                'twitter_url'=>$input['twitter_url'],
+                'urgent_care'=>$input['urgent_care'],
+                'user_id'=>$doctor->id,]
+        ]);
             $createDoctor->specializations()->sync($specialization);
             if (isset($input['profile']) && ! empty('profile')) {
                 $doctor->addMedia($input['profile'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
             }
-            $doctor->sendEmailVerificationNotification();
+            // $doctor->sendEmailVerificationNotification();
 
             DB::commit();
 
