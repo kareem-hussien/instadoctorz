@@ -137,7 +137,29 @@ class UserRepository extends BaseRepository
             $input['type'] = User::DOCTOR;
             $doctor->user->update($input);
             $doctor->user->address()->update($addressInputArray);
-            $doctor->update($doctorArray);
+            $doctor = Doctor::update([
+                'availability'=>json_encode($input['availability']),
+                'services'=>json_encode($input['services']),
+                'sub_urgent_care'=>json_encode($input['sub_urgent_care']),
+                'sub_preventive_health'=>json_encode($input['sub_preventive_health']),
+                'can_start'=>$input['can_start'],
+                'child_care'=>$input['child_care'],
+                'chronic_care'=>$input['chronic_care'],
+                'education'=>$input['education'],
+                'experience'=>$input['experience'],
+                'instagram_url'=>$input['instagram_url'],
+                'linkedin_url'=>$input['linkedin_url'],
+                'mental_health'=>$input['mental_health'],
+                'prefix'=>$input['prefix'],
+                'preventive_health'=>$input['preventive_health'],
+                'services_can_be_performed_online'=>$input['services_can_be_performed_online'],
+                'sexual_health'=>$input['sexual_health'],
+                'skin_and_hair'=>$input['skin_and_hair'],
+                'start_date'=>$input['start_date'],
+                'twitter_url'=>$input['twitter_url'],
+                'urgent_care'=>$input['urgent_care'],
+
+        ]);
             $doctor->specializations()->sync($specialization);
 
             if (count($qualificationArray) >= 0) {
@@ -174,42 +196,111 @@ class UserRepository extends BaseRepository
     public function updateProfile(array $userInput): bool
     {
         try {
+          
             DB::beginTransaction();
 
             $user = Auth::user();
-            $patient =  Patient::where('user_id',$user->id)->first();
-
-
-            $addressInputArray = Arr::only($userInput,
-                ['address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code']);
-            $userInput['type'] = User::PATIENT;
-            $userInput['email'] = setEmailLowerCase($userInput['email']);
-            /** @var Patient $patient */
-            $patient->user()->update(Arr::except($userInput, [
-                'address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code', 'patient_unique_id',
-                'avatar_remove',
-                'profile', 'is_edit', 'edit_patient_country_id', 'edit_patient_state_id', 'edit_patient_city_id',
-                'backgroundImg',
-            ]));
-
-            if(isset($patient->address)){
-                $patient->address()->update($addressInputArray);
-            }else{
-                $patient->address()->create($addressInputArray);
-            }
-
-            if ((getLogInUser()->hasRole('patient'))) {
-                if (! empty($userInput['image'])) {
-                    $user->clearMediaCollection(Patient::PROFILE);
-                    $user->patient->media()->delete();
-                    $user->patient->addMedia($userInput['image'])->toMediaCollection(Patient::PROFILE,
-                        config('app.media_disc'));
+            if(auth()->user()->role_name=='Patient'){
+                $patient =  Patient::where('user_id',$user->id)->first();
+    
+    
+                $addressInputArray = Arr::only($userInput,
+                    ['address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code']);
+                $userInput['type'] = User::PATIENT;
+                $userInput['email'] = setEmailLowerCase($userInput['email']);
+                /** @var Patient $patient */
+                
+                $patient->user()->update(Arr::except($userInput, [
+                    'address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code', 'patient_unique_id',
+                    'avatar_remove',
+                    'profile', 'is_edit', 'edit_patient_country_id', 'edit_patient_state_id', 'edit_patient_city_id',
+                    'backgroundImg',
+                ]));
+                
+    
+                if(isset($patient->address)){
+                    $patient->address()->update($addressInputArray);
+                }else{
+                    $patient->address()->create($addressInputArray);
                 }
-            } else {
-                if ((! empty($userInput['image']))) {
-                    $user->clearMediaCollection(User::PROFILE);
-                    $user->media()->delete();
-                    $user->addMedia($userInput['image'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
+    
+                if ((getLogInUser()->hasRole('patient'))) {
+                    if (! empty($userInput['image'])) {
+                        $user->clearMediaCollection(Patient::PROFILE);
+                        $user->patient->media()->delete();
+                        $user->patient->addMedia($userInput['image'])->toMediaCollection(Patient::PROFILE,
+                            config('app.media_disc'));
+                    }
+                } else {
+                    if ((! empty($userInput['image']))) {
+                        $user->clearMediaCollection(User::PROFILE);
+                        $user->media()->delete();
+                        $user->addMedia($userInput['image'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
+                    }
+                }
+            }else if(auth()->user()->role_name=='Doctor'){
+       
+
+                $doctor =  Doctor::where('user_id',$user->id)->first();
+    
+    
+                $addressInputArray = Arr::only($userInput,
+                    ['address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code']);
+                $userInput['type'] = User::DOCTOR;
+                $userInput['email'] = setEmailLowerCase($userInput['email']);
+                /** @var Doctor $doctor */
+                
+                $doctor->user()->update(Arr::except($userInput, [
+                    'address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code', 'doctor_unique_id',
+                    'avatar_remove',
+                    'profile', 'is_edit', 'edit_doctor_country_id', 'edit_doctor_state_id', 'edit_doctor_city_id',
+                    'backgroundImg',
+                ]));
+
+                $doctor = Doctor::update([
+                    'availability'=>json_encode($userInput['availability']),
+                    'services'=>json_encode($userInput['services']),
+                    'sub_urgent_care'=>json_encode($userInput['sub_urgent_care']),
+                    'sub_preventive_health'=>json_encode($userInput['sub_preventive_health']),
+                    'can_start'=>$userInput['can_start'],
+                    'child_care'=>$userInput['child_care'],
+                    'chronic_care'=>$userInput['chronic_care'],
+                    'education'=>$userInput['education'],
+                    'experience'=>$userInput['experience'],
+                    'instagram_url'=>$userInput['instagram_url'],
+                    'linkedin_url'=>$userInput['linkedin_url'],
+                    'mental_health'=>$userInput['mental_health'],
+                    'prefix'=>$userInput['prefix'],
+                    'preventive_health'=>$userInput['preventive_health'],
+                    'services_can_be_performed_online'=>$userInput['services_can_be_performed_online'],
+                    'sexual_health'=>$userInput['sexual_health'],
+                    'skin_and_hair'=>$userInput['skin_and_hair'],
+                    'start_date'=>$userInput['start_date'],
+                    'twitter_url'=>$userInput['twitter_url'],
+                    'urgent_care'=>$userInput['urgent_care'],
+    
+            ]);
+                
+    
+                if(isset($doctor->address)){
+                    $doctor->address()->update($addressInputArray);
+                }else{
+                    $doctor->address()->create($addressInputArray);
+                }
+    
+                if ((getLogInUser()->hasRole('doctor'))) {
+                    if (! empty($userInput['image'])) {
+                        $user->clearMediaCollection(Doctor::PROFILE);
+                        $user->doctor->media()->delete();
+                        $user->doctor->addMedia($userInput['image'])->toMediaCollection(Doctor::PROFILE,
+                            config('app.media_disc'));
+                    }
+                } else {
+                    if ((! empty($userInput['image']))) {
+                        $user->clearMediaCollection(User::PROFILE);
+                        $user->media()->delete();
+                        $user->addMedia($userInput['image'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
+                    }
                 }
             }
 
