@@ -61,11 +61,11 @@
         {{ Form::text('instagram_url', !empty($doctor->instagram_url) ? $doctor->instagram_url : null,['class' => 'form-control','placeholder' =>  __('messages.common.instagram_url'), 'id' => 'instagramUrl']) }}
     </div>
     <div class="row">
-                            
+                       
         <label class="form-label">{{ __('messages.patient.availability').':' }}</label>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="availability[]" value="Online from our premises" id="availabilityOnline">
+                <input class="form-check-input" type="checkbox" name="availability[]" value="Online from our premises" @checked(string_in_array(json_decode($doctor->availability),"Online from our premises")) id="availabilityOnline">
                 <label class="form-check-label" for="availabilityOnline">
                     {{ __('messages.patient.online_from_premises') }}
                 </label>
@@ -73,7 +73,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="availability[]" value="Remotely" id="availabilityRemotely">
+                <input class="form-check-input" @checked(string_in_array(json_decode($doctor->availability),"Remotely")) type="checkbox" name="availability[]"  value="Remotely" id="availabilityRemotely">
                 <label class="form-check-label" for="availabilityRemotely">
                     {{ __('messages.patient.remotely') }}
                 </label>
@@ -86,7 +86,7 @@
             <label class="form-label">{{ __('messages.patient.can_start_immediately').':' }}</label>
             <div class="col-md-6 mb-5">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="can_start_immediately" value="Yes" id="startImmediatelyYes">
+                    <input class="form-check-input" type="radio" name="can_start_immediately" value="Yes" @checked($doctor->can_start_immediately==1) id="startImmediatelyYes">
                     <label class="form-check-label" for="startImmediatelyYes">
                         {{ __('messages.patient.yes') }}
                     </label>
@@ -94,7 +94,7 @@
             </div>
             <div class="col-md-6 mb-5">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="can_start_immediately" value="No" id="startImmediatelyNo">
+                    <input class="form-check-input" type="radio" name="can_start_immediately" value="No" id="startImmediatelyNo" @checked($doctor->can_start_immediately==0)>
                     <label class="form-check-label" for="startImmediatelyNo">
                         {{ __('messages.patient.no') }}
                     </label>
@@ -105,7 +105,7 @@
     <div class="row" id="startDateContainer" style="display: none;">
         <div class="col-md-12 mb-5">
             <label class="form-label">{{ __('messages.patient.select_start_date').':' }}</label>
-            <input type="date" name="start_date" class="form-control" id="startDate">
+            <input type="date" name="start_date" value="{{ $doctor->start_date }}" class="form-control" id="startDate">
         </div>
     </div>
     
@@ -115,7 +115,7 @@
         <label class="form-label">{{ __('messages.patient.services_can_be_performed_online').':' }}</label>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="Online from our premises" id="urgent_care">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"Online from our premises")) name="services[]" value="Online from our premises" id="urgent_care">
                 <label class="form-check-label" for="urgent_care">
                     {{ __('messages.patient.urgent_care') }}
                 </label>
@@ -123,7 +123,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="chronic_care" id="chronic_care">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"chronic_care")) name="services[]" value="chronic_care" id="chronic_care">
                 <label class="form-check-label" for="chronic_care">
                     {{ __('messages.patient.chronic_care') }}
                 </label>
@@ -131,7 +131,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="child_care" id="child_care">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"child_care")) name="services[]" value="child_care" id="child_care">
                 <label class="form-check-label" for="child_care">
                     {{ __('messages.patient.child_care') }}
                 </label>
@@ -139,7 +139,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="sexual_health" id="sexual_health">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"sexual_health")) name="services[]" value="sexual_health" id="sexual_health">
                 <label class="form-check-label" for="sexual_health">
                     {{ __('messages.patient.sexual_health') }}
                 </label>
@@ -147,7 +147,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="skin_and_hair" id="skin_and_hair">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"skin_and_hair")) name="services[]" value="skin_and_hair" id="skin_and_hair">
                 <label class="form-check-label" for="skin_and_hair">
                     {{ __('messages.patient.skin_and_hair') }}
                 </label>
@@ -155,7 +155,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="mental_health" id="mental_health">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"mental_health")) name="services[]" value="mental_health" id="mental_health">
                 <label class="form-check-label" for="mental_health">
                     {{ __('messages.patient.mental_health') }}
                 </label>
@@ -163,7 +163,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="services[]" value="preventive_health" id="preventive_health">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->services),"preventive_health")) name="services[]" value="preventive_health" id="preventive_health">
                 <label class="form-check-label" for="preventive_health">
                     {{ __('messages.patient.preventive_health') }}
                 </label>
@@ -177,7 +177,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Allergies" id="allergies">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_urgent_care),"Allergies")) name="sub_urgent_care[]" value="Allergies" id="allergies">
                 <label class="form-check-label" for="allergies">
                     {{ __('messages.patient.allergies') }}
                 </label>
@@ -185,7 +185,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Acne" id="acne">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_urgent_care),"Acne")) name="sub_urgent_care[]" value="Acne" id="acne">
                 <label class="form-check-label" for="acne">
                     {{ __('messages.patient.acne') }}
                 </label>
@@ -193,7 +193,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="Cold, Cough" id="cold_cough">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_urgent_care),"Cold")) name="sub_urgent_care[]" value="Cold, Cough" id="cold_cough">
                 <label class="form-check-label" for="cold_cough">
                     {{ __('messages.patient.cold,cough') }}
                 </label>
@@ -202,7 +202,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="hair_loss" id="hair_loss">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_urgent_care),"hair_loss")) name="sub_urgent_care[]" value="hair_loss" id="hair_loss">
                 <label class="form-check-label" for="hair_loss">
                     {{ __('messages.patient.hair_loss') }}
                 </label>
@@ -210,7 +210,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="erectile_dysfunction" id="erectile_dysfunction">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_urgent_care),"erectile_dysfunction")) name="sub_urgent_care[]" value="erectile_dysfunction" id="erectile_dysfunction">
                 <label class="form-check-label" for="erectile_dysfunction">
                     {{ __('messages.patient.erectile_dysfunction') }}
                 </label>
@@ -218,7 +218,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_urgent_care[]" value="yeast_infections" id="yeast_infections">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_urgent_care),"yeast_infections")) name="sub_urgent_care[]" value="yeast_infections" id="yeast_infections">
                 <label class="form-check-label" for="yeast_infections">
                     {{ __('messages.patient.yeast_infections') }}
                 </label>
@@ -231,7 +231,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="asthma" id="asthma">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_chronic_care),"asthma")) name="sub_chronic_care[]" value="asthma" id="asthma">
                 <label class="form-check-label" for="asthma">
                     {{ __('messages.patient.asthma') }}
                 </label>
@@ -239,7 +239,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="high_cholesterol" id="high_cholesterol">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_chronic_care),"high_cholesterol")) name="sub_chronic_care[]" value="high_cholesterol" id="high_cholesterol">
                 <label class="form-check-label" for="high_cholesterol">
                     {{ __('messages.patient.high_cholesterol') }}
                 </label>
@@ -247,7 +247,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="high_blood_pressure" id="high_blood_pressure">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_chronic_care),"high_blood_pressure")) name="sub_chronic_care[]" value="high_blood_pressure" id="high_blood_pressure">
                 <label class="form-check-label" for="high_blood_pressure">
                     {{ __('messages.patient.high_blood_pressure') }}
                 </label>
@@ -256,7 +256,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="weight_management" id="weight_management">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_chronic_care),"weight_management")) name="sub_chronic_care[]" value="weight_management" id="weight_management">
                 <label class="form-check-label" for="weight_management">
                     {{ __('messages.patient.weight_management') }}
                 </label>
@@ -264,7 +264,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="diabetes" id="diabetes">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_chronic_care),"diabetes")) name="sub_chronic_care[]" value="diabetes" id="diabetes">
                 <label class="form-check-label" for="diabetes">
                     {{ __('messages.patient.diabetes') }}
                 </label>
@@ -272,7 +272,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_chronic_care[]" value="thyroid_issues" id="thyroid_issues">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_chronic_care),"thyroid_issues")) name="sub_chronic_care[]" value="thyroid_issues" id="thyroid_issues">
                 <label class="form-check-label" for="thyroid_issues">
                     {{ __('messages.patient.thyroid_issues') }}
                 </label>
@@ -290,7 +290,7 @@
         <label class="form-label">{{ __('messages.patient.sexual_health').':' }}</label>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_sexual_health[]" value="uti" id="uti">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_sexual_health),"uti")) name="sub_sexual_health[]" value="uti" id="uti">
                 <label class="form-check-label" for="uti">
                     {{ __('messages.patient.uti') }}
                 </label>
@@ -298,7 +298,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_sexual_health[]" value="erectile_dysfunction" id="erectile_dysfunction">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_sexual_health),"erectile_dysfunction")) name="sub_sexual_health[]" value="erectile_dysfunction" id="erectile_dysfunction">
                 <label class="form-check-label" for="erectile_dysfunction">
                     {{ __('messages.patient.erectile_dysfunction') }}
                 </label>
@@ -306,7 +306,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_sexual_health[]" value="emergency_contraception" id="emergency_contraception">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_sexual_health),"emergency_contraception")) name="sub_sexual_health[]" value="emergency_contraception" id="emergency_contraception">
                 <label class="form-check-label" for="emergency_contraception">
                     {{ __('messages.patient.emergency_contraception') }}
                 </label>
@@ -315,7 +315,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_sexual_health[]" value="weight_management" id="weight_management">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_sexual_health),"weight_management")) name="sub_sexual_health[]" value="weight_management" id="weight_management">
                 <label class="form-check-label" for="weight_management">
                     {{ __('messages.patient.weight_management') }}
                 </label>
@@ -323,7 +323,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_sexual_health[]" value="yeast_infections" id="yeast_infections">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_sexual_health),"yeast_infections")) name="sub_sexual_health[]" value="yeast_infections" id="yeast_infections">
                 <label class="form-check-label" for="yeast_infections">
                     {{ __('messages.patient.yeast_infections') }}
                 </label>
@@ -337,7 +337,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_skin_and_hair[]" value="hair_loss" id="hair_loss">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_skin_and_hair),"hair_loss")) name="sub_skin_and_hair[]" value="hair_loss" id="hair_loss">
                 <label class="form-check-label" for="hair_loss">
                     {{ __('messages.patient.hair_loss') }}
                 </label>
@@ -345,7 +345,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_skin_and_hair[]" value="acne" id="acne">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_skin_and_hair),"acne")) name="sub_skin_and_hair[]" value="acne" id="acne">
                 <label class="form-check-label" for="acne">
                     {{ __('messages.patient.acne') }}
                 </label>
@@ -353,7 +353,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_skin_and_hair[]" value="eczema" id="eczema">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_skin_and_hair),"eczema")) name="sub_skin_and_hair[]" value="eczema" id="eczema">
                 <label class="form-check-label" for="eczema">
                     {{ __('messages.patient.eczema') }}
                 </label>
@@ -362,7 +362,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_skin_and_hair[]" value="athletes_foot" id="athletes_foot">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_skin_and_hair),"athletes_foot")) name="sub_skin_and_hair[]" value="athletes_foot" id="athletes_foot">
                 <label class="form-check-label" for="athletes_foot">
                     {{ __('messages.patient.athletes_foot') }}
                 </label>
@@ -370,7 +370,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_skin_and_hair[]" value="cellulitis_sunburn" id="cellulitis_sunburn">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_skin_and_hair),"cellulitis_sunburn")) name="sub_skin_and_hair[]" value="cellulitis_sunburn" id="cellulitis_sunburn">
                 <label class="form-check-label" for="cellulitis_sunburn">
                     {{ __('messages.patient.cellulitis_sunburn') }}
                 </label>
@@ -384,7 +384,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="anxiety" id="anxiety">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"anxiety")) name="sub_mental_health[]" value="anxiety" id="anxiety">
                 <label class="form-check-label" for="anxiety">
                     {{ __('messages.patient.anxiety') }}
                 </label>
@@ -392,7 +392,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="depression" id="depression">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"depression")) name="sub_mental_health[]" value="depression" id="depression">
                 <label class="form-check-label" for="depression">
                     {{ __('messages.patient.depression') }}
                 </label>
@@ -400,7 +400,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="stress" id="stress">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"stress")) name="sub_mental_health[]" value="stress" id="stress">
                 <label class="form-check-label" for="stress">
                     {{ __('messages.patient.stress') }}
                 </label>
@@ -409,7 +409,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="grief_loss" id="grief_loss">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"grief_loss")) name="sub_mental_health[]" value="grief_loss" id="grief_loss">
                 <label class="form-check-label" for="grief_loss">
                     {{ __('messages.patient.grief_loss') }}
                 </label>
@@ -417,7 +417,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="postpartum" id="postpartum">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"postpartum")) name="sub_mental_health[]" value="postpartum" id="postpartum">
                 <label class="form-check-label" for="postpartum">
                     {{ __('messages.patient.postpartum') }}
                 </label>
@@ -426,7 +426,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="mood_disorders" id="mood_disorders">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"mood_disorders")) name="sub_mental_health[]" value="mood_disorders" id="mood_disorders">
                 <label class="form-check-label" for="mood_disorders">
                     {{ __('messages.patient.mood_disorders') }}
                 </label>
@@ -435,7 +435,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_mental_health[]" value="ptsd" id="ptsd">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_mental_health),"ptsd")) name="sub_mental_health[]" value="ptsd" id="ptsd">
                 <label class="form-check-label" for="ptsd">
                     {{ __('messages.patient.ptsd') }}
                 </label>
@@ -449,7 +449,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="wellness_visits" id="wellness_visits">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_preventive_health),"wellness_visits")) name="sub_preventive_health[]" value="wellness_visits" id="wellness_visits">
                 <label class="form-check-label" for="wellness_visits">
                     {{ __('messages.patient.wellness_visits') }}
                 </label>
@@ -457,7 +457,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="family_medicine" id="family_medicine">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_preventive_health),"family_medicine")) name="sub_preventive_health[]" value="family_medicine" id="family_medicine">
                 <label class="form-check-label" for="family_medicine">
                     {{ __('messages.patient.family_medicine') }}
                 </label>
@@ -465,7 +465,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="womens_wellness" id="womens_wellness">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_preventive_health),"womens_wellness")) name="sub_preventive_health[]" value="womens_wellness" id="womens_wellness">
                 <label class="form-check-label" for="womens_wellness">
                     {{ __('messages.patient.womens_wellness') }}
                 </label>
@@ -474,7 +474,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="men_wellness" id="men_wellness">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_preventive_health),"men_wellness")) name="sub_preventive_health[]" value="men_wellness" id="men_wellness">
                 <label class="form-check-label" for="men_wellness">
                     {{ __('messages.patient.men_wellness') }}
                 </label>
@@ -482,7 +482,7 @@
         </div>
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="diet_nutrition" id="diet_nutrition">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_preventive_health),"diet_nutrition")) name="sub_preventive_health[]" value="diet_nutrition" id="diet_nutrition">
                 <label class="form-check-label" for="diet_nutrition">
                     {{ __('messages.patient.diet_nutrition') }}
                 </label>
@@ -491,7 +491,7 @@
 
         <div class="col-md-6 mb-5">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="sub_preventive_health[]" value="medication_management" id="medication_management">
+                <input class="form-check-input" type="checkbox" @checked(string_in_array(json_decode($doctor->sub_preventive_health),"medication_management")) name="sub_preventive_health[]" value="medication_management" id="medication_management">
                 <label class="form-check-label" for="medication_management">
                     {{ __('messages.patient.medication_management') }}
                 </label>

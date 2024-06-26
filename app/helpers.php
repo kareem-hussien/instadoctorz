@@ -849,3 +849,21 @@ function isZoomTokenExpire()
     return $isExpired;
 }
 }
+
+if (!function_exists('string_in_array')) {
+    /**
+     * Check if a string is in an array of strings.
+     *
+     * @param array $array
+     * @param string $string
+     * @return bool
+     */
+    function string_in_array(?array $array, string $string): bool
+    {
+        if (is_null($array)) {
+            return false;
+        }
+
+        return in_array($string, $array);
+    }
+}
