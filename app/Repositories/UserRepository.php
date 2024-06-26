@@ -134,8 +134,9 @@ class UserRepository extends BaseRepository
             $input['status'] = (isset($input['status'])) ? 1 : 0;
             $input['type'] = User::DOCTOR;
             $doctor->user->update($input);
+
             $doctor->user->address()->update($addressInputArray);
-            $doctor = Doctor::update([
+            $doctor->update([
                 'availability'=>json_encode(request()->availability),
                 'services'=>json_encode(request()->services),
                 'sub_urgent_care'=>json_encode(request()->sub_urgent_care),
@@ -158,6 +159,7 @@ class UserRepository extends BaseRepository
                 'urgent_care'=>request()->urgent_care,
 
         ]);
+
             $doctor->specializations()->sync($specialization);
 
             if (count($qualificationArray) >= 0) {
@@ -200,7 +202,6 @@ class UserRepository extends BaseRepository
             $user = Auth::user();
             if(auth()->user()->role_name=='Patient'){
                 $patient =  Patient::where('user_id',$user->id)->first();
-    
     
                 $addressInputArray = Arr::only($userInput,
                     ['address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code']);
@@ -248,14 +249,28 @@ class UserRepository extends BaseRepository
                 $userInput['email'] = setEmailLowerCase($userInput['email']);
                 /** @var Doctor $doctor */
                 
-                $doctor->user()->update(Arr::except($userInput, [
-                    'address1', 'address2', 'city_id', 'state_id', 'country_id', 'postal_code', 'doctor_unique_id',
-                    'avatar_remove',
-                    'profile', 'is_edit', 'edit_doctor_country_id', 'edit_doctor_state_id', 'edit_doctor_city_id',
-                    'backgroundImg',
-                ]));
+                $doctor->user()->update([
+                    'first_name'=>request()->first_name,
+                    'last_name'=>request()->last_name,
+                    'email'=>request()->email,
+                    'contact'=>request()->contact,
+                    'dob'=>request()->dob,
+                    'gender'=>request()->gender,
+                    'status'=>request()->status,
+                    'password'=>request()->password,
+                    'language'=>request()->language,
+                    'blood_group'=>request()->blood_group,
+                    'type'=>request()->type,
+                    'region_code'=>request()->region_code,
+                    'email_verified_at'=>request()->email_verified_at,
+                    'email_notification'=>request()->email_notification,
+                    'time_zone'=>request()->time_zone,
+                    'dark_mode'=>request()->dark_mode,
+                    
+                ]);
 
-                $doctor = Doctor::update([
+
+                $doctor->update([
                     'availability'=>json_encode(request()->availability),
                     'services'=>json_encode(request()->services),
                     'sub_urgent_care'=>json_encode(request()->sub_urgent_care),
@@ -280,11 +295,7 @@ class UserRepository extends BaseRepository
             ]);
                 
     
-                if(isset($doctor->address)){
-                    $doctor->address()->update($addressInputArray);
-                }else{
-                    $doctor->address()->create($addressInputArray);
-                }
+
     
                 if ((getLogInUser()->hasRole('doctor'))) {
                     if (! empty($userInput['image'])) {

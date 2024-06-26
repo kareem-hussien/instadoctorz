@@ -200,6 +200,9 @@ class UserController extends AppBaseController
     public function editProfile(): \Illuminate\View\View
     {
         $user = Auth::user();
+        if(auth()->user()->role_name=='Doctor')
+        $patient =  Doctor::where('user_id',$user->id)->first();
+        else
         $patient =  Patient::where('user_id',$user->id)->first();
         $data = $this->userRepo->getData();
         $prefixdata=[

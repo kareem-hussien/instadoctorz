@@ -182,16 +182,16 @@
                         {{ Form::hidden('is_edit', true, ['id' => 'staffProfileIsEdit']) }}
                         {{ Form::hidden('is_edit', true, ['id' => 'patientProfileIsEdit']) }}
                         {{ Form::hidden(
-                            'edit_patient_country_id',
+                            'edit_doctor_country_id',
                             isset($patient->address->country_id) ? $patient->address->country_id : null,
                             ['id' => 'editPatientProfileCountryId'],
                         ) }}
                         {{ Form::hidden(
-                            'edit_patient_state_id',
+                            'edit_doctor_state_id',
                             isset($patient->address->state_id) ? $patient->address->state_id : null,
                             ['id' => 'editPatientProfileStateId'],
                         ) }}
-                        {{ Form::hidden('edit_patient_city_id', isset($patient->address->city_id) ? $patient->address->city_id : null, [
+                        {{ Form::hidden('edit_doctor_city_id', isset($patient->address->city_id) ? $patient->address->city_id : null, [
                             'id' => 'editPatientProfileCityId',
                         ]) }}
                         @csrf
