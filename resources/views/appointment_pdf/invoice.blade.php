@@ -10,7 +10,7 @@
     <style>
         @font-face {
             font-family: "Poppins";
-            src: url("/theme/fonts/Poppins-Regular.ttf")format(truetype);
+            src: url("/theme/fonts/Cairo-Regular.ttf")format(truetype);
             font-style: normal;
             font-weight: 400;
             font-display: swap;

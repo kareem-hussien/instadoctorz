@@ -3,70 +3,70 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 html {
@@ -18335,35 +18335,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .aside-menu-container {
@@ -18504,35 +18504,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .header {
@@ -18624,35 +18624,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .livewire-table .table.table-striped {
@@ -18690,35 +18690,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .widget .widget-icon {
@@ -18730,35 +18730,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .text-cyan-100 {
@@ -18989,7 +18989,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 
@@ -18997,28 +18997,28 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .bg-cyan-100 {
@@ -19241,7 +19241,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 
@@ -19249,7 +19249,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 
@@ -19257,7 +19257,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 
@@ -19265,7 +19265,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 
@@ -19273,7 +19273,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 
@@ -19423,7 +19423,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 
@@ -19431,7 +19431,7 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 
@@ -19439,21 +19439,21 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .btn-success, .btn-warning, .btn-secondary {
@@ -19485,35 +19485,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .dropdown-toggle {
@@ -19556,35 +19556,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .card {
@@ -19607,35 +19607,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .required:after {
@@ -19665,35 +19665,35 @@ textarea.form-control-lg {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .table.table-striped {
@@ -19737,35 +19737,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .progress-bar {
@@ -19776,35 +19776,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 
@@ -19836,35 +19836,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .modal-header {
@@ -19889,35 +19889,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .nav-pills .nav-item:first-child .nav-link {
@@ -19965,35 +19965,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .alert {
@@ -20007,35 +20007,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .image {
@@ -20266,70 +20266,70 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 
@@ -20405,35 +20405,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .breadcrumb-item + .breadcrumb-item::before {
@@ -20447,35 +20447,35 @@ tbody tr:last-child td {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+    src: url(/fonts/Cairo-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+    src: url(/fonts/Cairo-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 700;
-    src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+    src: url(/fonts/Cairo-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+    src: url(/fonts/Cairo-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 500;
-    src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+    src: url(/fonts/Cairo-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
     font-display: swap;
 }
 .carousel:after {
