@@ -45,7 +45,7 @@
                                     <div class="d-block">
                                         <div class="image-picker">
                                             <div class="image previewImage" id="exampleInputImage"
-                                                {{ $styleCss }}="background-image: url('{{ getLogInUser()->hasRole('patient') ? getLogInUser()->patient->profile : $user->profile_image }}')
+                                                {{ $styleCss }}="background-image: url('{{ $user->profile_image }}')
                                 ">
                                             </div>
                                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
