@@ -186,7 +186,7 @@
     </div>
 
 
-    <div class="row mt-5" id="urgentCareSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="urgentCareSubservices" style="display: none;">
         <label class="form-label">{{ __('messages.patient.urgent_care') . ':' }}</label>
         <div class="row">
             <div class="col-md-6 mb-5">
@@ -247,7 +247,7 @@
         </div>
     </div>
 
-    <div class="row mt-5" id="ChronicCareSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="ChronicCareSubservices" style="display: none;">
         <label class="form-label">{{ __('messages.patient.chronic_care') . ':' }}</label>
         <div class="row">
             <div class="col-md-6 mb-5">
@@ -308,14 +308,14 @@
         </div>
     </div>
 
-    <div class="row mt-5" id="ChildCareSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="ChildCareSubservices" style="display: none;">
         <div class="row">
             <label class="form-label">{{ __('messages.patient.services_can_be_performed_online') . ':' }}</label>
             <label class="form-label">{{ __('messages.patient.child_care') . ':' }}</label>
         </div>
     </div>
 
-    <div class="row mt-5" id="SexualHealthSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="SexualHealthSubservices" style="display: none;">
         <label class="form-label">{{ __('messages.patient.sexual_health') . ':' }}</label>
         <div class="row">
             <div class="col-md-6 mb-5">
@@ -368,7 +368,7 @@
 
     </div>
 
-    <div class="row mt-5" id="SkinAndHairSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="SkinAndHairSubservices" style="display: none;">
         <label class="form-label">{{ __('messages.patient.skin_and_hair') . ':' }}</label>
         <div class="row">
             <div class="col-md-6 mb-5">
@@ -421,7 +421,7 @@
 
     </div>
 
-    <div class="row mt-5" id="MentalHealthSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="MentalHealthSubservices" style="display: none;">
         <label class="form-label">{{ __('messages.patient.mental_health') . ':' }}</label>
         <div class="row">
             <div class="col-md-6 mb-5">
@@ -494,7 +494,7 @@
 
     </div>
 
-    <div class="row mt-5" id="PreventiveHealthSubservices" style="display: none;">
+    <div class="row mt-5 toggle-div" id="PreventiveHealthSubservices" style="display: none;">
         <label class="form-label">{{ __('messages.patient.preventive_health') . ':' }}</label>
         <div class="row">
             <div class="col-md-6 mb-5">
@@ -703,7 +703,7 @@
 
 
 <script>
-        document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
             const checkboxes = document.querySelectorAll("input[type='checkbox']");
             
             function toggleDiv(checkboxId, divId) {
