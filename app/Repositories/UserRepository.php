@@ -81,14 +81,18 @@ class UserRepository extends BaseRepository
             $input['password'] = Hash::make($input['password']);
             $input['type'] = User::DOCTOR;
             $input['language'] = Setting::where('key','language')->get()->toArray()[0]['value'];
-                  $doctor = User::create($input);
+            $doctor = User::create($input);
             $doctor->assignRole('doctor');
             $doctor->address()->create($addressInputArray);
             $createDoctor = Doctor::create([
-                    'availability'=>json_encode(request()->availability),
-                    'services'=>json_encode(request()->services),
-                    'sub_urgent_care'=>json_encode(request()->sub_urgent_care),
-                    'sub_preventive_health'=>json_encode(request()->sub_preventive_health),
+                'availability'=>json_encode(request()->availability),
+                'services'=>json_encode(request()->services),
+                'sub_urgent_care'=>json_encode(request()->sub_urgent_care),
+                'sub_chronic_care'=>json_encode(request()->sub_chronic_care),
+                'sub_sexual_health'=>json_encode(request()->sub_sexual_health),
+                'sub_skin_and_hair'=>json_encode(request()->sub_skin_and_hair),
+                'sub_mental_health'=>json_encode(request()->sub_mental_health),
+                'sub_preventive_health'=>json_encode(request()->sub_preventive_health),
                     'can_start'=>request()->can_start,
                     'child_care'=>request()->child_care,
                     'chronic_care'=>request()->chronic_care,
@@ -140,6 +144,10 @@ class UserRepository extends BaseRepository
                 'availability'=>json_encode(request()->availability),
                 'services'=>json_encode(request()->services),
                 'sub_urgent_care'=>json_encode(request()->sub_urgent_care),
+                'sub_chronic_care'=>json_encode(request()->sub_chronic_care),
+                'sub_sexual_health'=>json_encode(request()->sub_sexual_health),
+                'sub_skin_and_hair'=>json_encode(request()->sub_skin_and_hair),
+                'sub_mental_health'=>json_encode(request()->sub_mental_health),
                 'sub_preventive_health'=>json_encode(request()->sub_preventive_health),
                 'can_start'=>request()->can_start,
                 'child_care'=>request()->child_care,
@@ -270,6 +278,10 @@ class UserRepository extends BaseRepository
                     'availability'=>json_encode(request()->availability),
                     'services'=>json_encode(request()->services),
                     'sub_urgent_care'=>json_encode(request()->sub_urgent_care),
+                    'sub_chronic_care'=>json_encode(request()->sub_chronic_care),
+                    'sub_sexual_health'=>json_encode(request()->sub_sexual_health),
+                    'sub_skin_and_hair'=>json_encode(request()->sub_skin_and_hair),
+                    'sub_mental_health'=>json_encode(request()->sub_mental_health),
                     'sub_preventive_health'=>json_encode(request()->sub_preventive_health),
                     'can_start'=>request()->can_start,
                     'child_care'=>request()->child_care,

@@ -54,10 +54,13 @@ class Doctor extends Model
      * @var string[]
      */
     protected $fillable = [
-        'availability',
-        'services',
-        'sub_urgent_care',
-        'sub_preventive_health',
+'services',
+'sub_urgent_care',
+'sub_chronic_care',
+'sub_sexual_health',
+'sub_skin_and_hair',
+'sub_mental_health',
+'sub_preventive_health',
         'can_start',
         'immediately',
         'child_care',

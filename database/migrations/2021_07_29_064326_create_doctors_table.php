@@ -28,9 +28,14 @@ return new class extends Migration
             $table->string('skin_and_hair')->nullable();
             $table->string('mental_health')->nullable();
             $table->string('preventive_health')->nullable();
-            $table->string('sub_urgent_care')->nullable();
-            $table->string('sub_preventive_health')->nullable();
             $table->string('services')->nullable();
+            $table->string('sub_urgent_care')->nullable();
+            $table->string('sub_chronic_care')->nullable();
+            $table->string('sub_sexual_health')->nullable();
+            $table->string('sub_skin_and_hair')->nullable();
+            $table->string('sub_mental_health')->nullable();
+            $table->string('sub_preventive_health')->nullable();
+
             
             $table->timestamps();
 
