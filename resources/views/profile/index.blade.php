@@ -373,7 +373,7 @@
                             </div>
                         </div>
 
-                        <div class="row" id="startDateContainer">
+                        <div class="row" id="startDateContainer" style="display: none;">
                             <div class="col-md-12 mb-5">
                                 <label class="form-label">{{ __('messages.patient.select_start_date') . ':' }}</label>
                                 <input type="date" name="start_date" class="form-control" id="startDate">
@@ -885,6 +885,35 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+            const checkboxes = document.querySelectorAll("input[type='checkbox']");
+            
+            function toggleDiv(checkboxId, divId) {
+                const checkbox = document.getElementById(checkboxId);
+                const relatedDiv = document.getElementById(divId);
+                if (checkbox.checked) {
+                    relatedDiv.style.display = "block";
+                } else {
+                    relatedDiv.style.display = "none";
+                }
+                checkbox.addEventListener("change", function() {
+                    relatedDiv.style.display = this.checked ? "block" : "none";
+                });
+            }
+
+            // Check and set visibility for all required checkboxes
+            toggleDiv("urgent_care", "urgentCareSubservices");
+            toggleDiv("chronic_care", "ChronicCareSubservices");
+            toggleDiv("child_care", "ChildCareSubservices");
+            toggleDiv("sexual_health", "SexualHealthSubservices");
+            toggleDiv("skin_and_hair", "SkinAndHairSubservices");
+            toggleDiv("mental_health", "MentalHealthSubservices");
+            toggleDiv("preventive_health", "PreventiveHealthSubservices");
+            // Add more calls to toggleDiv for other checkbox-div pairs as needed
+        });
+
+
 $(document).ready(function(){
        $("#urgentCareSubservices").hide();
         $("#ChronicCareSubservices").hide();
@@ -908,7 +937,7 @@ $(document).ready(function(){
         toggleDiv("skin_and_hair", "SkinAndHairSubservices");
         toggleDiv("mental_health", "MentalHealthSubservices");
         toggleDiv("preventive_health", "PreventiveHealthSubservices");
-})
+});
 
 
 
