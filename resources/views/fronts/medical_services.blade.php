@@ -13,11 +13,13 @@
                         <h1 class="mb-3">
                             {{ __('messages.web.services') }}
                         </h1>
+                        <p>{{ __('messages.web.service_page_subtitle') }}</p>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center mb-0">
                                 <li class="breadcrumb-item"><a href="{{ route('medical') }}"> {{ __('messages.web.home') }}</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">{{ __('messages.web.services') }}</li>
                             </ol>
+                            
                         </nav>
                     </div>
                 </div>
@@ -28,6 +30,9 @@
         <!-- end our-team section -->
         <section class="services-section bg-secondary p-t-100">
             <div class="container">
+
+        <section class="services-section bg-secondary p-t-100">
+        <div class="container">
                 <div class="row justify-content-center">
                     @foreach($services as $service)
                     <div class="col-xl-4 col-md-6 services-block d-flex align-items-stretch">
@@ -53,8 +58,52 @@
         </section>
         <!-- end our-team section -->
 
+        <section class="about-section p-b-50">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-xl-row">
+                    <div class="col-xxl-6 col-xl-5 after-rectangle-shape position-relative about-left-content left-shape">
+                        <div class="row position-relative z-index-1">
+                            <div class="col-xl-6 col-md-3 about-block">
+                                <div class="about-image-box rounded-20 bg-white">
+                                    <img src="{{ getSettingValue('about_image_2') }}" alt="About" class="rounded-20" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7">
+                        <div class="about-right-content mb-md-5 mb-4 mb-xl-0 text-center text-xl-start">
+                            <h5 class="text-primary top-heading fs-6 mb-3">{{ __('messages.web.instadoctorz') }}</h5>
+                            <h2 class="pb-2">{{ __('messages.web.child_care') }}</h2>
+                            <p class="paragraph pb-1 ">{{ __('messages.web.child_care_details_0') }}</p>
+                            <p class="paragraph pb-1">{{ __('messages.web.child_care_details_1') }}</p>
+                            <p class="paragraph pb-1">{{ __('messages.web.child_care_details_2') }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
         <!-- start services counter section -->
-        <section class="services-counter-section p-t-100 p-b-100">
+        <section class="services-counter-section p-t-50 p-b-50">
             <div class="container">
                 <div class="bg-white rounded-20 box-shadow py-3 py-sm-0">
                     <div class="row">
