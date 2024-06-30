@@ -48,7 +48,7 @@ return [
     'this_is_an_alert' => 'This is an alert',
     'no_matching_records_found' => 'No matching records found',
     'contact_us' => 'Contact Us',
-    'our_team' => 'Our Team',
+    'our_team' => 'Doctors',
     'front_faqs' => 'FAQs',
     'sign_up' => 'Sign Up',
     'satisfied_patient' => 'Satisfied Patient',
@@ -102,7 +102,7 @@ return [
     'from_previous_month' => 'From Previous Month',
     'monthly_expense' => 'Monthly Expense !',
     'monthly_appointments' => 'Monthly Appointments',
-
+ 
     'web' => [
         'mentalHealth' => 'Mental Health',
         'adultCare' => 'Adult Care',
@@ -115,7 +115,7 @@ return [
         'testimonial' => 'Testimonial',
         'see_what_are_the_patients' => 'See What Are The Patients',
         'saying_about_us' => 'Saying About us',
-        'our_team' => 'Our Team',
+        'our_team' => 'Doctors',
         'our_doctor' => 'Our Doctor',
         'contact_us' => 'Contact Us',
         'faqs' => 'FAQs',
@@ -124,7 +124,7 @@ return [
         'sign_up' => 'Sign Up',
         'year_experience' => 'Year Experience',
         'working_process' => 'Working Process',
-        'how_we_works' => 'How we works',
+        'how_we_works' => 'How it works',
         'registration' => 'Registration',
         'view_more' => 'View More',
         'email_address' => 'Email Address',
@@ -140,14 +140,14 @@ return [
         'patient_can_book_an_appointment___' => 'Patient can book an appointment with doctor from landing page or from his login panel.',
         'doctors_can_interact___' => 'Doctors can interact with patients and do related treatment.',
         'we_cover_a_big___' => 'We Cover A Big Variety Of Medical Services',
-        'we_provide_the_special_tips___' => 'We provide the special tips and advice’s of heath care treatment and high level of best.',
+        'we_provide_the_special_tips___' => 'We provide the special tips and advice’s of heath care treatment and high level of best services.',
         'timings' => 'Timings',
         'book_an_appointment' => 'Book An Appointment',
         'book_appointment' => 'Book Appointment',
         'login' => 'Login',
         'home' => 'Home',
         'about_us' => 'About Us',
-        'services' => 'Services',
+        'services' => 'We Treat',
         'appointment' => 'Appointment',
         'doctors' => 'Doctors',
         'contact' => 'Contact',
@@ -189,9 +189,6 @@ return [
         'sign_in' => 'Sign In',
         'new_here' => 'New Here',
         'create_an_account' => 'Create an Account',
-        'create_an_account_aspatient' => 'Create an account as a patient',
-        'create_an_account_asdoctor' => 'Create an account as a doctor',
-
         'remember_me' => 'Remember me',
         'forgot_password' => 'Forgot Password',
         'already_have_patient_account' => 'Already Have Patient Account',
@@ -204,10 +201,134 @@ return [
         'we_make_sure_that_your_life_are_in_good_hands' => 'We make sure that your Life are in Good Hands',
         'dynamically_formulate_error_free_results_before_integrated_results_dramatically_incubate_integrated_resources_without_cost_effective_outside_the' => 'Dynamically formulate error-free results before integrated results. Dramatically incubate integrated resources without cost effective outside the.',
         'enquiry' => 'Enquiry',
+        'homepage_title' => 'Your Doctor Anywhere .. Anytime',
+
+        /* New Data - Service Page */
+        'service_page_subtitle' => 'Total Mind Wellness & Body Care',
+        'service_page_subtitle_p' => 'We have online doctors and medical providers available to treat urgent care, chronic care, sexual health, skin & hair, mental health care, and preventive care.',
+        'service_page_head' => 'Everyday, Urgent Care & Mental Health',
+        'service_page_head_subtitle' => 'We treat a variety of conditions ranging from coughs to hair loss to anxiety.<br>We are here to make you feel your best today and every day.',
+    
+    
+    
+    
+        'instadoctorz' => 'Insta Doctorz',
+        'child_care' => 'Child Care',
+        'child_care_details_0' => 'Care for your child that goes beyond the next level',
+        'child_care_details_1' => 'Embark on the journey of easy and accessible pediatric care with InstaDoctorz Virtual Pediatric Care! Ensuring your child’s well-being is just a click away. Recognizing the utmost importance of your child’s health, our virtual childcare services are meticulously tailored to provide expert care in the comfort of your home. Our team of pediatric specialists is at your service, addressing a broad spectrum of healthcare needs from routine check-ups to specialized consultations.',
+        'child_care_details_2' => 'Rely on us as your dedicated virtual healthcare partner, unwaveringly committed to the health and happiness of your little ones. At InstaDoctorz, we make caring for your child’s health effortlessly within reach.',
+        
+        'urgent_care' => 'Urgent Care',
+        'urgent_care_details' => 'Care for your family that goes beyond the next level<br>When you’re sick and need to see a doctor, our team is standing by around the clock. Available 24/7, our providers can help get you on track as well as order prescriptions, if needed. We’ll take the hassle and guesswork out of feeling better.<br>For select health plans and employers, we can offer treatment programs and plans to help manage specific issues and conditions.<br>Some things we can help with and treat:<br><ul class="fa-ul"><li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Cold & flu</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Men’s Health</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Skin Conditions</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Allergies</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Women’s Health</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Headaches</li></ul>',
+        'behavioral_health' => 'Behavioral Health',
+        'behavioral_health_details' => 'Care for your family that goes beyond the next level<br>Our diverse team of licensed psychologists and psychiatrists provide the emotional support you need from the privacy and ease of home. From talk therapy to medication management, our team is here to support your full mental wellbeing.<br>For select health plans and employers, we can offer treatment programs and plans to help manage specific issues and conditions.<br>Some things we can help with and treat:<br><ul class="fa-ul">  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Anxiety</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Relationship Issues</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Depression</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Trauma & Loss</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Postpartum</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Screenings</li></ul>',
+        'Preventive_health' => 'Preventive Health',
+        'preventive_health_details' => 'Care for your family that goes beyond the next level<br>For select health plans and employers, we can offer treatment programs and plans to help manage specific issues and conditions.<br>Our attentive care team partners with you to support your day-to-day health and self-care routines. From healthy eating to preventive lab screenings, we bring together trusted providers with solutions that actually work in the real world.<br>Some things we can help with and treat:<br><ul class="fa-ul">  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Wellness Visits</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Family Medicine</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Men’s Health</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Diet & Nutrition</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Women’s Health</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Medication Management</li></ul>',
+        'chronic_care_details' => '<h2>Chronic Care</h2><br>Care for your family that goes beyond the next level<br>For select health plans and employers, we can offer treatment programs and plans to help manage specific issues and conditions.<br>Our approach to care gives you the flexibility to focus on your health when it works for you. When you need to manage an ongoing or chronic health conditions, we make it easy and are there in the touch of a button.<br>Some things we can help with and treat:<br><ul class="fa-ul">  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Asthma</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Thyroid</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Diabetes</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>High Cholesterol</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Weight Management</li>  <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>High Blood Pressure</li></ul>',
+        'top_reasons' => 'The top reasons our patients use',
         
     
-
+    
+    
+    
+        
+        'physical_care' => 'Physical Care',
+        'cold_and_flu' => 'Cold and Flu',
+        'diabetes_and_cholesterol' => 'Diabetes and Cholesterol',
+        'high_blood_pressure' => 'High Blood Pressure',
+        'male_sexual_weakness' => 'Male Sexual Weakness',
+        'weight_gain' => 'Weight Gain',
+    
+        'psychological_care' => 'Psychological Care',
+        'anxiety_and_depression' => 'Anxiety and Depression',
+        'psychological_and_nervous_pressure' => 'Psychological and Nervous Pressure',
+        'mood_disorders' => 'Mood Disorders',
+        'post_traumatic_disorders' => 'Post-Traumatic Disorders',
+        'stress' => 'Stress',
+    
+        'child_care' => 'Child Care',
+        'high_temperatures' => 'High Temperatures',
+        'colds_coughs_and_allergies' => 'Colds, Coughs, and Allergies',
+        'nutrition_and_vitamins' => 'Nutrition and Vitamins',
+    
+        'sexual_care' => 'Sexual Care',
+        'erectile_dysfunction' => 'Erectile Dysfunction',
+        'premature_ejaculation' => 'Premature Ejaculation',
+        'contraceptives' => 'Contraceptives',
+        'treatment_of_sexual_infections' => 'Treatment of Sexual Infections',
+    
+        'preventive_care' => 'Preventive Care',
+        'hair_loss' => 'Hair Loss',
+        'acne_and_wrinkle_removal' => 'Acne and Wrinkle Removal',
+        'weight_loss' => 'Weight Loss',
+        'therapeutic_nutrition' => 'Therapeutic Nutrition (for men, women, and athletes)',
     ],
+    'about' => [
+        'header_head' => 'إنستا دكتورز، بوابتك إلى الرعاية الصحية الافتراضية على مدار الساعة طوال أيام الأسبوع والمصممة لرفاهية عقلك وجسمك. تأسست إنستا دكتورز عام 2023، وهي أكثر من مجرد منصة للرعاية الصحية عبر الإنترنت؛ إنه التزام بتحويل الصحة العالمية من خلال الرعاية الرحيمة والحلول المبتكرة.',
+        'about_us_details' => 'InstaDoctorz, your gateway to 24/7 virtual healthcare designed for the well-being of your mind and body. Established in 2023, InstaDoctorz is more than just an online healthcare platform; it is a commitment to transforming global health through compassionate care and innovative solutions.',
+        'mission' => 'Mission',
+        'mission_details' => 'At InstaDoctorz, our mission is clear — to transform the world’s health by providing instant, affordable access to high-quality healthcare. We believe that every individual, regardless of their location or circumstances, deserves the right to connect with a board-certified physician or licensed psychologist whenever they need it. From urgent care to mental health, preventative, primary, and chronic care, we offer a comprehensive suite of services to cater to all your health needs.',
+        'vision' => 'Vision',
+        'vision_details' => 'Picture this: A world where healthcare is not just a service but a universal right. At InstaDoctorz, we’re on a mission to lead the charge towards a future where accessible, friendly, and instant healthcare is the norm. We’re not just transforming healthcare; we’re turning it into a friendly, accessible, and instant experience for everyone, everywhere. Your health is our jam, and we’re here to make sure you get the care you need, whenever you need it.',
+        'accessible_details' => 'Our virtual healthcare services are accessible through your smartphone, tablet, or computer, ensuring that healthcare is available to you at your convenience. We recognize the importance of immediate access to medical and psychological support, and we’re here 24/7 to provide the care you deserve.',
+    ],
+    /** Services */
+    'howitworksnumber' => [
+        '1_1' => 'Choose the category needed',
+        '1_2' => 'Choose the service needed (illness)',
+        '1_3' => 'Choose your doctor',
+        '1_4' => 'Choose your available time',
+        '2_1' => 'Choose your desired time',
+        '2_2' => 'Add to cart',
+        '2_3' => 'Submit your details',
+        '2_4' => 'Pay online (an email will be sent to you with the invoice confirmation)',
+        '3_1' => 'Check your mail for your session confirmation and the Zoom link with the chosen doctor',
+        '3_2' => 'After the session a mail will be sent to you with the observation and the prescription',
+        '3_3' => 'Rate your visit',
+    ],
+   /** New - Child Care */
+   'cc' => [
+    'homepage_title' => '( 24/7 ) Child Care',
+    'title' => 'Child Care',
+    'header_title' => 'Meet with a Child Care doctor in minutes.',
+    'header_stitle' => 'With 24/7 access to online doctors and other medical experts, care is always available, anytime and anywhere.',
+    'page_details' => 'Embark on the journey of easy and accessible pediatric care with InstaDoctorz Virtual Pediatric Care! Ensuring your child’s well-being is just a click away. Recognizing the utmost importance of your child’s health, our virtual childcare services are meticulously tailored to provide expert care in the comfort of your home. Our team of pediatric specialists is at your service, addressing a broad spectrum of healthcare needs from routine check-ups to specialized consultations.',
+    'page_details2' => 'Rely on us as your dedicated virtual healthcare partner, unwaveringly committed to the health and happiness of your little ones. At InstaDoctorz, we make caring for your child’s health effortlessly within reach.',
+],
+/** New - Mental Health */
+'mh' => [
+    'homepage_title' => '( 24/7 ) Adults Mental Health',
+    'title' => 'Mental Health',
+    'header_title' => 'Online counselling your way',
+    'header_stitle' => 'Choose from a variety of mental health therapists and psychiatrists with different backgrounds and specialties, available when you are.',
+    'header_stitle2' => 'From online therapy to medication management, we’re here to support your full mental wellbeing.',
+    'page_details' => 'Online counseling services include coaching, online therapy, and psychiatry for all behavioral health needs. Get the help you need in days, not months.',
+],
+/** New - Urgent Care */
+'uc' => [
+    'homepage_title' => '( 24/7 ) Adult Care',
+    'title' => 'Urgent Care',
+    'header_title' => 'Meet with an urgent care doctor in minutes.',
+    'header_stitle' => 'With 24/7 access to online doctors and other medical experts, care is always available, anytime and anywhere.',
+    'page_details' => 'When you’re sick and need care, our team is standing by around the clock. Available 24/7, our online urgent care providers can help get you on track as well as order prescriptions, if needed. We’ll take the hassle and guesswork out of feeling better.',
+    'page_details2' => 'For select health plans and employers, we can offer treatment programs and plans to help manage specific issues and conditions.',
+],
+/** New - Warnings */
+'warning' => [
+    'title' => 'We Don’t Treat',
+    'head' => 'While our providers are able to treat most common issues, there are conditions that we don’t treat. Please see an in-person doctor or hospital if you experience any of the following :',
+    'des_1' => 'Traumatic brain or spinal cord injury *',
+    'des_2' => 'Vomiting or coughing blood',
+    'des_3' => 'Loss of consciousness',
+    'des_4' => 'Severe burns',
+    'des_5' => 'Chest pain and/or numbness',
+    'des_6' => 'Lacerations',
+    'des_7' => 'Broken bones',
+    'des_8' => 'Ear infections **',
+    'sub_footer' => 'Our providers are unable to write prescriptions for controlled substances such as codeine or oxycodone. Please see a doctor in person if you require medication classified as a controlled substance.',
+    'star_1' => '* Please note, this limitation is for the immediate period following a spinal cord or traumatic brain injury, which may need in person emergency or trauma medical services. We are able to treat people who have a history of a traumatic brain or spinal cord injury that have non-emergent medical needs.',
+    'star_2' => '** People who have a digital otoscope that allows the healthcare provider to see in the ear remotely can be evaluated during a telemedicine visit for ear infections.',
+],
 
     'admin_dashboard' => [
         'dashboard' => 'Dashboard',
@@ -445,7 +566,8 @@ return [
         'filter' => 'Filter',
         'today' => 'Today',
         'emailverified' => 'Email Verified',
-
+        /** Boula - Doctor Register */
+        
         'prefix' => 'Prefix',
         'education' => 'Education',
         'experience' => 'Experience',
@@ -494,7 +616,6 @@ return [
         'diet_nutrition' => 'Diet Nutrition',
         'medication_management' => 'Medication Management',
         'upload_file' => 'Upload File',
-
     ],
 
     'country' => [

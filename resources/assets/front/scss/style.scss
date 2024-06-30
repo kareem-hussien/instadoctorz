@@ -271,7 +271,13 @@ h6,
         padding-top: 50px;
     }
 }
+.p-t-15 {
+    padding-top: 100px;
 
+    @media (max-width: 991px) {
+        padding-top: 15px;
+    }
+}
 .p-b-100 {
     padding-bottom: 100px;
 
