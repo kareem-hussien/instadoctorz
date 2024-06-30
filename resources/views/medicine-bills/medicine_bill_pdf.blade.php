@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "//www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
+<html lang="en" dir="{{ app()->getLocale()=='ar'?'rtl':'ltr' }}">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="icon" href="{{ asset('web/img/hms-saas-favicon.ico') }}" type="image/png">

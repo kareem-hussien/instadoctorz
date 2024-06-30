@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="{{ app()->getLocale()=='ar'?'rtl':'ltr' }}">
 <head>
     <base href="../../">
     <title>{{ getAppName() }}</title>
