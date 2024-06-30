@@ -31,6 +31,18 @@
                                    href="{{ route('medicalAboutUs') }}">{{ __('messages.web.about_us') }}</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link {{ Request::is('childCare*') ? 'active' : '' }}"
+                                   href="{{ route('childCare') }}">{{ __('messages.web.childCare') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('mentalHealth*') ? 'active' : '' }}"
+                                   href="{{ route('mentalHealth') }}">{{ __('messages.web.mentalHealth') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('adultCare*') ? 'active' : '' }}"
+                                   href="{{ route('adultCare') }}">{{ __('messages.web.adultCare') }}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link {{ Request::is('medical-contact*') ? 'active' : '' }}"
                                    href="{{ route('medicalContact') }}"
                                    data-turbo="false">{{ __('messages.web.contact_us') }}</a>

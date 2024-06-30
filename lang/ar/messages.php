@@ -96,6 +96,9 @@ return [
 
     'web' => [
         'enter_your_email' => 'أدخل بريدك الإلكتروني',
+        'mentalHealth' => 'الصحة العقلية',
+        'adultCare' => 'رعاية البالغين',
+        'childCare' => 'رعاية الاطفال',
         'emergency_help' => 'مساعدة الطوارئ',
         'qualified_doctors' => 'أطباء مؤهلون',
         'best_professionals' => 'أفضل المحترفين',

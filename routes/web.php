@@ -84,6 +84,9 @@ Route::get('/login', function () {
 Route::middleware('setLanguage')->group(function () {
     Route::get('/', [FrontController::class, 'medical'])->name('medical');
     Route::get('/medical-about-us', [FrontController::class, 'medicalAboutUs'])->name('medicalAboutUs');
+    Route::get('/child/care', [FrontController::class, 'childCare'])->name('childCare');
+    Route::get('/mental/health', [FrontController::class, 'mentalHealth'])->name('mentalHealth');
+    Route::get('/adult/care', [FrontController::class, 'adultCare'])->name('adultCare');
     Route::get('/medical-services', [FrontController::class, 'medicalServices'])->name('medicalServices');
     Route::get('/medical-appointment', [FrontController::class, 'medicalAppointment'])->name('medicalAppointment');
     Route::get('/medical-doctors', [FrontController::class, 'medicalDoctors'])->name('medicalDoctors');

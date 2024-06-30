@@ -104,6 +104,9 @@ return [
     'monthly_appointments' => 'Monthly Appointments',
 
     'web' => [
+        'mentalHealth' => 'Mental Health',
+        'adultCare' => 'Adult Care',
+        'childCare' => 'Child Care',
         'enter_your_email' => 'Enter Your Email',
         'emergency_help' => 'Emergency Help',
         'qualified_doctors' => 'Qualified Doctors',

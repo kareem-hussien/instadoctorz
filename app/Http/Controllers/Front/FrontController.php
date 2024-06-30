@@ -156,4 +156,19 @@ class FrontController extends AppBaseController
 
         return $this->sendSuccess(__('messages.flash.language_change'));
     }
+
+
+    public function adultCare(){
+        return view('fronts.adultCare');
+    }
+
+    public function mentalHealth(){
+        return view('fronts.mentalHealth');
+        
+    }
+    
+    public function childCare(){
+        return view('fronts.childCare');
+
+    }
 }
