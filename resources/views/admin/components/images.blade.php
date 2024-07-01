@@ -18,7 +18,6 @@
 
 @if (isset($images))
     <div class="row">
-        @include('admin.components.selectAll',['on'=>'danger','off'=>'success'])
         @foreach ($images as $image)
             @if (isset($image->id))
                 <div class="col-md-3 mt-3">

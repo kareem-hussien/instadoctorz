@@ -562,6 +562,8 @@
         <label class="form-label">{{ __('messages.patient.upload_file') . ':' }}</label>
         <input type="file" name="uploaded_file" class="form-control" id="uploadedFile">
     </div>
+
+    @include('components.images')
     <div class="col-md-6 mb-5">
         <div class="mb-3" io-image-input="true">
             <label for="exampleInputImage" class="form-label">{{ __('messages.doctor.profile') }}:</label>
@@ -655,6 +657,8 @@
         <button type="button" class="btn btn-secondary"
             id="cancelQualification">{{ __('messages.common.discard') }}</button>
     </div>
+
+ 
 </div><br>
 <div class="table-responsive-sm w-100 mt-4">
     <table class="table table-row-dashed table-row-gray-300 gy-7 align-middle" id="doctorQualificationTbl">

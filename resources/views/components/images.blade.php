@@ -18,14 +18,13 @@
 
 @if (isset($images))
     <div class="row">
-        @include('admin.components.selectAll',['on'=>'danger','off'=>'success'])
         @foreach ($images as $image)
             @if (isset($image->id))
                 <div class="col-md-3 mt-3">
                     <div class="custom-control custom-switch custom-switch-off-success custom-switch-on-danger">
                         <input type="checkbox" name="delimages[]" value="{{ $image->id }}"
                             class="custom-control-input" id="customSwitch{{ $image->id }}">
-                        <img width="100" height="100" src="{{ asset($image->url) }}" alt=""
+                        <img width="100" height="100" src="{{ asset($image->path) }}" alt=""
                             for="customSwitch{{ $image->id }}">
                         <label class="custom-control-label" for="customSwitch{{ $image->id }}"></label>
                     </div>

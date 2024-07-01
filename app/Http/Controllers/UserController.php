@@ -31,8 +31,9 @@ use Laracasts\Flash\Flash;
 use Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException;
 use Yajra\DataTables\DataTables;
 use App\Models\Patient;
+use App\Models\UserFile;
 use Arr;
-
+use Illuminate\Support\Facades\File;
 class UserController extends AppBaseController
 {
     /**
@@ -102,6 +103,8 @@ class UserController extends AppBaseController
         $input = $request->all();
         $this->userRepo->store($input);
 
+ 
+
         Flash::success(__('messages.flash.doctor_create'));
 
         return redirect(route('doctors.index'));
@@ -151,8 +154,10 @@ class UserController extends AppBaseController
             $cities = getCities($data['stateId']->toArray());
         }
 
+        $images=$doctor->user->images;
+
         return view('doctors.edit',
-            compact('user', 'qualifications', 'data', 'doctor', 'countries', 'state', 'cities', 'years', 'bloodGroup'));
+            compact('user', 'qualifications', 'data', 'doctor', 'countries', 'state', 'cities', 'years', 'bloodGroup','images'));
     }
 
     /**
@@ -162,6 +167,8 @@ class UserController extends AppBaseController
     {
         $input = $request->all();
         $this->userRepo->update($input, $doctor);
+
+
 
         Flash::success(__('messages.flash.doctor_update'));
 

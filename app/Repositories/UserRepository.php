@@ -20,7 +20,8 @@ use Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException;
 use Yajra\DataTables\DataTables;
 use Illuminate\Support\Facades\Session;
 use App\Models\Setting;
-
+use App\Models\UserFile;
+use Illuminate\Support\Facades\File;
 /**
  * Class UserRepository
  */
@@ -115,7 +116,27 @@ class UserRepository extends BaseRepository
             if (isset($input['profile']) && ! empty('profile')) {
                 $doctor->addMedia($input['profile'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
             }
+
+            if (request()->hasFile('images')) {
+                $files = request()->file('images');
+                foreach ($files as $file) {
+                    $data['image'] = $file->store('images');
+                    $file->move('images', $data['image']);
+                    UserFile::create(['path' => $data['image'],'user_id'=>$createDoctor->id]);
+                }
+            }   
+            if (request()->has('delimages')) {
+                foreach (request()->delimages as $id) {
+                    $image = UserFile::find($id);
+                    if(file_exists($image->path))
+                      File::delete($image->path);
+                    if(isset($image->path))
+                      $image->delete();
+                }
+            } 
             // $doctor->sendEmailVerificationNotification();
+
+            
 
             DB::commit();
 
@@ -193,6 +214,24 @@ class UserRepository extends BaseRepository
                 $doctor->user->media()->delete();
                 $doctor->user->addMedia($input['profile'])->toMediaCollection(User::PROFILE, config('app.media_disc'));
             }
+
+            if (request()->hasFile('images')) {
+                $files = request()->file('images');
+                foreach ($files as $file) {
+                    $data['image'] = $file->store('images');
+                    $file->move('images', $data['image']);
+                    UserFile::create(['path' => $data['image'],'user_id'=>$doctor->user->id]);
+                }
+            }   
+            if (request()->has('delimages')) {
+                foreach (request()->delimages as $id) {
+                    $image = UserFile::find($id);
+                    if(file_exists($image->path))
+                      File::delete($image->path);
+                    if(isset($image->path))
+                      $image->delete();
+                }
+            } 
             DB::commit();
 
             return $doctor;

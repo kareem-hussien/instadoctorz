@@ -9,7 +9,5 @@ class UserFile extends Model
 {
     use HasFactory;
     protected $guarded=[];
-    public function getPathAttribute(){
-        return  asset($this->path);
-   }
+
 }

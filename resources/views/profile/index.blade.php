@@ -835,6 +835,9 @@
                             <input type="file" name="uploaded_file" class="form-control" id="uploadedFile">
                         </div>
 
+                      @include('components.images')
+
+
                         <div class="row">
                             <div class="col-md-6 mb-7">
                                 {{ Form::label('address1', __('messages.patient.address1') . ':', ['class' => 'form-label']) }}

@@ -555,6 +555,8 @@
 						<label class="form-label">{{ __('messages.patient.upload_file').':' }}</label>
 						<input type="file" name="uploaded_file" class="form-control" id="uploadedFile">
 					</div>
+
+                    @include('components.images')
     <div class="col-lg-6">
         <div class="mb-5">
             <div class="mb-3" io-image-input="true">
