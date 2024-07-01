@@ -15,7 +15,7 @@
         </div>
         <div class="bg-white rounded-15 shadow-md width-540 px-5 px-sm-7 py-10 mx-auto">
             <h1 class="text-center mb-7">{{__('messages.web.patient_registration')}}</h1>
-            <form method="POST" action="{{ route('doctor.register') }}" >
+            <form method="POST" action="{{ route('doctor.register') }}"  enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-md-6 mb-sm-7 mb-4">
@@ -551,6 +551,10 @@
 						<label class="form-label">{{ __('messages.patient.upload_file').':' }}</label>
 						<input type="file" name="uploaded_file" class="form-control" id="uploadedFile">
 					</div>
+
+
+					@include('components.images')
+
 
                     <div class="mb-sm-7 mb-4 form-check">
                         <input type="checkbox" class="form-check-input" name="toc" value="1" required/>

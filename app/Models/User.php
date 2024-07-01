@@ -600,6 +600,11 @@ class User extends Authenticatable implements HasMedia
         return asset('web/media/avatars/male.png');
     }
 
+
+    public function images(){
+        return $this->hasMany(UserFile::class);
+    }
+
     public function getRoleNameAttribute()
     {
         $role = $this->roles->first();

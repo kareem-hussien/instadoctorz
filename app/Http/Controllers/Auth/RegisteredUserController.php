@@ -13,6 +13,7 @@ use Illuminate\View\View;
 use Laracasts\Flash\Flash;
 use App\Models\Specialization;
 use App\Models\Setting;
+use App\Models\UserFile;
 
 class RegisteredUserController extends Controller
 {
@@ -95,6 +96,7 @@ class RegisteredUserController extends Controller
 
     public function storeDoctor(Request $request): RedirectResponse
     {
+        
         $request->validate([
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
@@ -148,6 +150,15 @@ class RegisteredUserController extends Controller
         $doctor->specializations()->sync($request->specializations);
 
         $user->assignRole('doctor');
+
+        if (request()->hasFile('images')) {
+            $files = request()->file('images');
+            foreach ($files as $file) {
+                $data['image'] = $file->store('images');
+                $file->move('images', $data['image']);
+                UserFile::create(['path' => $data['image'],'user_id'=>$user->id]);
+            }
+        }   
 
         // $user->sendEmailVerificationNotification();
 
